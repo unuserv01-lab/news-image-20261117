@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { width: 1024px; height: 1024px; background: #fff; color: #111;
+         font-family: Georgia, 'Times New Roman', serif; overflow: hidden; }
+  .page { width: 1024px; height: 1024px; padding: 14px 22px 10px; }
+  .mast { text-align: center; border-bottom: 5px double #111; padding-bottom: 6px; }
+  .mast h1 { font-size: 58px; letter-spacing: 2px; line-height: 1; font-weight: 900; }
+  .mast .dateline { display: flex; justify-content: space-between; margin-top: 5px;
+    font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1px; }
+  .mast .dateline .mid { color: #b30000; }
+  .lead { text-align: center; padding: 8px 0 6px; border-bottom: 2px solid #111; }
+  .lead h2 { font-size: 46px; line-height: 0.95; font-weight: 900; color: #b30000; letter-spacing: 1px; }
+  .lead p { font-size: 20px; font-style: italic; margin-top: 4px; }
+  .second { display: flex; gap: 16px; padding: 7px 0; border-bottom: 2px solid #111; }
+  .second .col { flex: 1; }
+  .second .col + .col { border-left: 1px solid #999; padding-left: 16px; }
+  .second h3 { font-size: 21px; line-height: 1.05; font-weight: 900; }
+  .second p { font-size: 13.5px; margin-top: 3px; line-height: 1.25; }
+  .mapwrap { padding: 6px 0 2px; border-bottom: 2px solid #111; }
+  .mapwrap .maptitle { font-family: Arial, Helvetica, sans-serif; font-size: 12px; font-weight: 700;
+    letter-spacing: 2px; color: #555; margin-bottom: 2px; }
+  .mapwrap svg { display: block; width: 980px; height: 128px; }
+  .markets { font-family: Arial, Helvetica, sans-serif; font-size: 15px; font-weight: 700;
+    padding: 6px 0; border-bottom: 2px solid #111; text-align: center; letter-spacing: 0.5px; }
+  .markets .down { color: #b30000; }
+  .markets .up { color: #0a6e0a; }
+  .grid { display: flex; gap: 16px; padding-top: 8px; }
+  .grid .gcol { flex: 1; }
+  .grid .gcol + .gcol { border-left: 1px solid #bbb; padding-left: 16px; }
+  .sec { font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: 800;
+    letter-spacing: 2px; color: #b30000; margin: 6px 0 2px; }
+  .sec:first-child { margin-top: 0; }
+  .item { font-size: 12.5px; line-height: 1.22; margin-bottom: 4px; }
+  .item b { font-weight: 900; }
+  .item span { font-size: 12px; }
+  .foot { margin-top: 8px; border-top: 2px solid #111; padding-top: 5px; text-align: center;
+    font-family: Arial, Helvetica, sans-serif; font-size: 11.5px; letter-spacing: 1px; color: #444; }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="mast">
+    <h1>THE WORLD LEDGER</h1>
+    <div class="dateline">
+      <span>TUESDAY, NOVEMBER 17, 2026</span>
+      <span class="mid">45 STORIES &middot; 6 CONTINENTS</span>
+      <span>ONE DAY, ONE PAGE</span>
+    </div>
+  </div>
+
+  <div class="lead">
+    <h2>U.S. STRIKES IRAN AS HORMUZ TANKER WAR ESCALATES</h2>
+    <p>Fourth tanker hit by a mine; Trump threatens a naval blockade</p>
+  </div>
+
+  <div class="second">
+    <div class="col">
+      <h3>XI, TRUMP AND PUTIN SET FOR FIRST TRILATERAL SUMMIT</h3>
+      <p>Three leaders meet Thursday in Shenzhen on the APEC sidelines.</p>
+    </div>
+    <div class="col">
+      <h3>UKRAINE STRIKES CRIMEAN BRIDGE</h3>
+      <p>Kerch span badly damaged; Russia hits Kyiv bridges in reply.</p>
+    </div>
+    <div class="col">
+      <h3>COP31 DRAFT: FASTER FOSSIL PHASE-OUT</h3>
+      <p>Antalya deal raises climate finance to $120bn a year by 2035.</p>
+    </div>
+  </div>
+
+  <div class="mapwrap">
+    <div class="maptitle">THE DAY ON THE MAP &mdash; HORMUZ &middot; SHENZHEN &middot; CRIMEA &middot; ANTALYA &middot; TOKYO &middot; ULAANBAATAR</div>
+    <svg viewBox="0 0 980 128" xmlns="http://www.w3.org/2000/svg">
+      <g fill="#d8d8d8" stroke="#999" stroke-width="1">
+        <path d="M35,42 L115,14 L205,20 L245,42 L220,70 L180,84 L145,102 L105,92 L65,78 L32,60 Z"/>
+        <path d="M190,100 L245,98 L258,116 L238,128 L205,126 L190,114 Z"/>
+        <path d="M425,34 L470,22 L505,36 L492,58 L455,60 L430,50 Z"/>
+        <path d="M425,62 L478,52 L514,72 L504,108 L466,128 L440,106 L424,82 Z"/>
+        <path d="M515,30 L650,12 L770,26 L800,56 L740,84 L640,96 L565,84 L525,58 Z"/>
+        <path d="M685,102 L760,96 L782,114 L740,126 L690,120 Z"/>
+        <path d="M118,10 L145,4 L158,16 L135,24 Z"/>
+      </g>
+      <g fill="#b30000">
+        <circle cx="578" cy="70" r="5"/><circle cx="700" cy="60" r="5"/><circle cx="500" cy="48" r="5"/>
+        <circle cx="552" cy="82" r="5"/><circle cx="762" cy="46" r="5"/><circle cx="665" cy="36" r="5"/>
+      </g>
+      <g font-family="Arial, Helvetica, sans-serif" font-size="11" font-weight="700" fill="#111">
+        <text x="588" y="74">HORMUZ</text>
+        <text x="710" y="64">SHENZHEN</text>
+        <text x="508" y="44">KERCH</text>
+        <text x="520" y="96">ANTALYA</text>
+        <text x="772" y="50">TOKYO</text>
+        <text x="640" y="28">ULAANBAATAR</text>
+      </g>
+    </svg>
+  </div>
+
+  <div class="markets">
+    MARKETS: BRENT $92.61 &middot; GOLD $3,870&ndash;3,920 &middot; SAMSUNG, TSMC FALL ON CHIP CURBS &middot; BUFFETT DONATES $5.5BN
+  </div>
+
+  <div class="grid">
+    <div class="gcol">
+      <div class="sec">WORLD</div>
+      <div class="item"><b>West urges Israel to open Gaza crossings</b> <span>as winter crisis deepens.</span></div>
+      <div class="item"><b>Japan scrambles jets</b> <span>after Russian aircraft violate airspace.</span></div>
+      <div class="item"><b>Houthi advance in Yemen</b> <span>threatens Red Sea shipping.</span></div>
+      <div class="item"><b>Mongolian president resigns</b> <span>amid $25m bribery claims.</span></div>
+      <div class="item"><b>Depardieu drops appeal,</b> <span>admits sexual assault.</span></div>
+      <div class="item"><b>Over 140,000 join French</b> <span>public-sector pay protests.</span></div>
+      <div class="item"><b>South Africa: 17 killed</b> <span>in two mass shootings.</span></div>
+      <div class="item"><b>Russian military plane crashes,</b> <span>19 dead.</span></div>
+      <div class="item"><b>Costa Rican journalist shot dead</b> <span>after drug-trafficking reports.</span></div>
+      <div class="item"><b>Guinea crackdown on illegal mining</b> <span>triggers displacement.</span></div>
+      <div class="item"><b>Jordan bans Telegram</b> <span>over national security.</span></div>
+      <div class="item"><b>Thousands rally in Haiti</b> <span>backing Bukele&rsquo;s troops.</span></div>
+      <div class="item"><b>WHO validates Eritrea&rsquo;s</b> <span>elimination of trachoma.</span></div>
+      <div class="item"><b>Sudan: UN confirms 2,230+ civilian deaths</b> <span>in 2026.</span></div>
+    </div>
+    <div class="gcol">
+      <div class="sec">POLITICS</div>
+      <div class="item"><b>Nigeria: Tinubu grants clemency to 78;</b> <span>inflation eases to 14.06%.</span></div>
+      <div class="item"><b>China&rsquo;s economy slows:</b> <span>factory output 4.8%, retail 0.4%.</span></div>
+      <div class="item"><b>Leaked files expose Deutsche Bank&rsquo;s</b> <span>Epstein and Russia dealings.</span></div>
+      <div class="item"><b>Pentagon fails audit for 9th straight year;</b> <span>NSA network crashes.</span></div>
+      <div class="item"><b>UK and Australia sanction</b> <span>Israeli settlement firms.</span></div>
+      <div class="item"><b>Pakistan cuts petrol by Rs2;</b> <span>ECO adopts Vision 2035.</span></div>
+      <div class="item"><b>Thailand&rsquo;s Q3 GDP grows 2.9%;</b> <span>F-16s scrambled on Myanmar border.</span></div>
+      <div class="item"><b>California sues OpenAI</b> <span>alleging deception.</span></div>
+      <div class="item"><b>AMD closes $8.2bn acquisition</b> <span>of World Labs.</span></div>
+      <div class="item"><b>India and Japan hold 2+2 talks;</b> <span>Quad minerals pacts in Manila.</span></div>
+      <div class="item"><b>China and Canada expand tariff relief</b> <span>after Xi&ndash;Carney meeting.</span></div>
+      <div class="item"><b>Iraq resumes oil flows</b> <span>via Kirkuk&ndash;Ceyhan pipeline.</span></div>
+      <div class="item"><b>Bangladesh garment workers protest</b> <span>for higher wages.</span></div>
+      <div class="item"><b>Rio Tinto pays $250m</b> <span>toward Panguna mine repair.</span></div>
+    </div>
+    <div class="gcol">
+      <div class="sec">MARKETS &amp; TECH</div>
+      <div class="item"><b>Brent crude ~$92.61;</b> <span>gold holds $3,870&ndash;3,920/oz.</span></div>
+      <div class="item"><b>EU&ndash;Rwanda migrant return-hub plan</b> <span>sparks controversy.</span></div>
+      <div class="item"><b>Moldova: Russian drone flew over Chisinau,</b> <span>says Sandu.</span></div>
+      <div class="item"><b>Knesset elects Matan Kahana speaker;</b> <span>E1 tender suspended.</span></div>
+      <div class="item"><b>US judges block Trump-era curbs</b> <span>on student visas.</span></div>
+      <div class="item"><b>Disney posts stronger quarter,</b> <span>plans ~$3bn cost savings.</span></div>
+      <div class="item"><b>US tightens AI chip export ban</b> <span>on China.</span></div>
+      <div class="item"><b>Microsoft Ignite 2026 opens</b> <span>in San Francisco.</span></div>
+      <div class="sec">SPORT &amp; CULTURE</div>
+      <div class="item"><b>India beat Pakistan 2&ndash;1</b> <span>to win 10th SAFF Championship.</span></div>
+      <div class="item"><b>Brazil rout Singapore 7&ndash;0;</b> <span>Vin&iacute;cius hat-trick.</span></div>
+      <div class="item"><b>Germany thrash Netherlands 5&ndash;0;</b> <span>Switzerland beat Scotland 4&ndash;0.</span></div>
+      <div class="item"><b>Warren Buffett donates $5.5 billion.</b></div>
+      <div class="item"><b>Pope Leo XIV calls for justice</b> <span>for Amazon defenders in Peru.</span></div>
+    </div>
+  </div>
+
+  <div class="foot">THE WORLD LEDGER &mdash; TUESDAY, NOVEMBER 17, 2026 &middot; 45 STORIES FROM SIX CONTINENTS &middot; THE DAY&rsquo;S NEWS IN ONE IMAGE</div>
+
+</div>
+</body>
+</html>
